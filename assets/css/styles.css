@@ -1,0 +1,13 @@
+.label-input-container {
+  margin-left: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  font-size: 1.5em; }
+  .label-input-container label {
+    margin-top: 2em; }
+  .label-input-container input {
+    font-size: 1em; }
+
+/*# sourceMappingURL=styles.css.map */
