@@ -5,10 +5,25 @@
    flex-direction: column;
    width: 20%;
    font-size: 1.5em;
+   position: absolute;
    label {
-      margin-top: 2em;
+      position: relative;
+      z-index: 1;
    }
    input {
       font-size: 1em;
+      position: relative;
+      margin-top: 1em;
    }
+}
+
+.focus {
+   margin-bottom: -1.5em;
+   z-index: 1;
+   color: lighten(black, 50%);
+   font-size: .75em;
+}
+
+.space {
+   margin-top: 1em;
 }
