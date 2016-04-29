@@ -6,22 +6,33 @@
    width: 40%;
    font-size: 1.5em;
    position: absolute;
-   .label {
-      z-index: 1;
-   }
-   input {
-      font-size: 1em;
-      height: 1.5em;
+   .input-container {
       position: relative;
+      .label-up {
+         position: absolute;
+         bottom: 3.7em;
+         font-size: 0.75em;
+         z-index: 1;
+         transition: color 1s, font-size 1s, bottom 1s;
+
+      }
+
+      .label-down {
+
+         position: absolute;
+         font-size: 1em;
+         bottom: 1em;
+         z-index: 1;
+         color: lighten(black, 70%);
+         transition: color 1s, font-size 1s, bottom 1s;
+      }
+      input {
+         font-size: 1em;
+         height: 1.5em;
+      }
    }
 }
 
-.focus {
-   margin-bottom: -1.5em;
-   z-index: 1;
-   color: lighten(black, 50%);
-
-}
 
 .space {
    margin-bottom: 1em;

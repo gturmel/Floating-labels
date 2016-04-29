@@ -6,17 +6,24 @@
   width: 40%;
   font-size: 1.5em;
   position: absolute; }
-  .label-input-container .label {
-    z-index: 1; }
-  .label-input-container input {
-    font-size: 1em;
-    height: 1.5em;
+  .label-input-container .input-container {
     position: relative; }
-
-.focus {
-  margin-bottom: -1.5em;
-  z-index: 1;
-  color: gray; }
+    .label-input-container .input-container .label-up {
+      position: absolute;
+      bottom: 3.7em;
+      font-size: 0.75em;
+      z-index: 1;
+      transition: color 1s, font-size 1s, bottom 1s; }
+    .label-input-container .input-container .label-down {
+      position: absolute;
+      font-size: 1em;
+      bottom: 1em;
+      z-index: 1;
+      color: #b3b3b3;
+      transition: color 1s, font-size 1s, bottom 1s; }
+    .label-input-container .input-container input {
+      font-size: 1em;
+      height: 1.5em; }
 
 .space {
   margin-bottom: 1em; }
